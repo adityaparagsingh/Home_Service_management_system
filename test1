@@ -1,0 +1,10 @@
+import pickle
+f=open('/Users/pankajsingh/Downloads/stu.dat','rb+')
+stu={ }
+try: 
+    while stu:
+        a=pickle.load(f)
+        print(a)
+except EOFError:
+    print('error')
+f.close()
